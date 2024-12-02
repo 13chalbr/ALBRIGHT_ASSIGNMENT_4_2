@@ -1,0 +1,33 @@
+﻿<Window x:Class="ALBRIGHT_ASSIGNMENT_4_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ALBRIGHT_ASSIGNMENT_4_2"
+        mc:Ignorable="d"
+        Title="Assignment 4-2" MinHeight="750" MinWidth="1000">
+    <Grid>
+        <Grid Width="825" Height="600" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid x:Name="gridLoggedIn" Grid.Row="0" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="8" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock x:Name="txtName" Grid.Column="0" Margin="5" Text="Welcome First Last!" TextWrapping="Wrap" FontSize="29.333"/>
+                    <TextBlock Text="Log off" FontSize="24"/>
+                    </Button>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
+
